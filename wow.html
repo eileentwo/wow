@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        
+        <link rel="stylesheet" type="text/css" href="css/animate.css" />
+        <!--　
+        	 自定义动画：
+	        	var wow = new WOW({
+				    boxClass: 'wow',  //填字符串    ‘wow’是需要执行动画的元素的 class名
+				    animateClass: 'animated', //字符串    ‘animated’是animation.css 动画自带的 class名
+				    offset: 0, 	//整数    0 表示目标元素距离可视区域多少开始执行动画
+				    mobile: true,  //布尔值    true    是否在移动设备上执行动画
+				    live: true		//布尔值    true    异步加载的内容是否有效
+				});
+		　　接下来介绍一下动画播放的一些属性：
+		　　　　data-wow-duration="3s"   设置动画播放一次需要的时间
+		　　　　data-wow-delay="3s"   设置动画延迟多久开始执行
+		　　　　data-wow-iteration="5"   设置动画执行多少次
+		
+		　　再介绍一下常用的几种默认动画样式：
+		　　　　lightSpeedIn：从右慢慢摇曳进入
+		　　　　rollIn：从左边旋转进入
+		　　　　pulse:变大
+		　　　　flipInX:绕x轴晃
+		　　　　shake:左右晃动
+		　　　　swing:吊在那要摇晃
+		　　　　bounce:原地上下抖动
+		　　　　bounceInLeft:从左方进来上下抖动
+		　　　　bounceInRight:从右方进来上下抖动
+		　　　　bounceInDown:从上方进来上下抖动
+		　　　　bounceInUp:从下方进来上下抖动-->
+        <style type="text/css">
+            div{
+                        width: 100px;
+                        height: 100px;
+                        background-color: yellow;
+                        margin: 50px;
+                    }
+        </style>
+    </head>
+    <body>
+        <div class="wow lightSpeedIn col-md-3" data-wow-iteration="5" data-wow-duration="3s">lightSpeedIn从右慢慢摇曳进入</div>
+            <div class="wow rollIn col-md-3" data-wow-iteration="5" data-wow-duration="3s">rollIn从左边旋转进入</div>
+            <div class="wow pulse col-md-3" data-wow-iteration="5" data-wow-duration="3s">pulse变大</div>
+            <div class="wow flipInX col-md-3" data-wow-iteration="5" data-wow-duration="3s">flipInX绕y轴晃</div>
+            <div class="wow shake col-md-3" data-wow-iteration="5" data-wow-duration="3s">shake左右晃动</div>
+            <div class="wow swing col-md-3" data-wow-iteration="5" data-wow-duration="3s">swing吊在那要摇晃</div>
+            <div class="wow bounce col-md-3" data-wow-iteration="5" data-wow-duration="3s">bounce原地上下抖动</div>
+            <div class="wow bounceInLeft col-md-3" data-wow-iteration="5" data-wow-duration="3s">bounceInLeft从左方进来上下抖动</div>
+            <div class="wow bounceInRight col-md-3" data-wow-iteration="5" data-wow-duration="3s">bounceInRight从右方进来上下抖动</div>
+            <div class="wow bounceInDown col-md-3" data-wow-iteration="5" data-wow-duration="3s">bounceInDown从上方进来上下抖动</div>
+            <div class="wow bounceInUp col-md-3" data-wow-iteration="5" data-wow-duration="3s">bounceInUp从下方进来上下抖动</div>
+    </body>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script language="JavaScript" src="js/wow.min.js"></script>
+    
+　　<script type="text/javascript">
+        /*初始化自动动画wow.min.js插件*/
+        new WOW().init();
+    </script>
+</html>
